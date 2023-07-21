@@ -1,0 +1,71 @@
+@import "./variable"; /* VARIABLES */
+
+.classListInput{
+    .accordion-item{
+        margin: 0px 20px 10px 20px;
+        width: 320px;
+    }
+}
+
+.classlist_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.classlist_card_container{
+    background-color: $primaryColor;
+    display: flex;
+    height: 100px;
+    width: auto;
+    color: $secondaryColor;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 8px;
+    .cl_first_column{
+        width: 120px;
+        align-self: center;
+        padding-top: 10px;
+        .cl_icon{
+            width: 90px;
+            height: 90px;
+            background-image: url(./images/ClassList/classlist_icon.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+    }
+    .cl_second_column{
+        padding-top: 30px;
+        width: 180px;
+        text-transform: uppercase;
+        h1{
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        h2{
+            text-transform: capitalize;
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+    .cl_third_column{
+        flex-grow: 1;
+        text-align: right;
+        padding-top: 12px;
+        p{
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+            padding-right: 10px;
+            color: $secondaryColor;   
+        }
+        p:hover{
+            cursor:pointer;
+            color: $quaternaryColor;
+        }
+        .listitem_buttons{
+            padding-top: 10px;
+        }
+    }
+}

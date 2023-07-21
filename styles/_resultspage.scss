@@ -1,0 +1,26 @@
+@import "./variable"; /* VARIABLES */
+
+.result_page_container{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    min-height: 100vh;
+    .result_page_header{
+        padding: 30px 100px 10px;
+        h1{
+            font-family: $primaryFont;
+            font-size: 25px;
+            font-weight: 700;
+            color: $primaryColor;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.student_result_table{
+    margin: auto;
+    min-height: auto;
+    box-shadow: $mainBoxshadow;
+}
+

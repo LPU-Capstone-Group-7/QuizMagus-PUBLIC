@@ -1,0 +1,175 @@
+@import "./variable"; /* VARIABLES */
+
+// GAME PAGE 
+.game-page{
+    margin-top: 50px;
+    //justify-content: space-around;
+    min-height: calc(100vh - 65px);
+    .game_header{
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px 15px;
+        font-family: $primaryFont;
+        width: auto;
+        min-height: 100px;
+        color: $quaternaryColor;
+        text-align: center;
+        .game_headeruser{
+            h1{
+            padding-bottom: 2px;
+            font-size: 20px;
+            font-weight: 600;
+            }
+        }
+        .game_headerdetails{
+            h1{
+                margin-bottom: 10px;
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .UnityContainer .UnityStyles {
+        width: 100%;
+        height: auto;
+    }
+
+    .fullscreen_div{
+        width: 70%;
+        height: 80px;
+        margin: auto;
+        #fullscreen_button{
+            display: flex;
+            color: $primaryColor;
+            font-weight: 600;
+            float:right;
+            p{ 
+                margin-right: 10px;
+            }
+        }
+    }
+    .leaderboards_section{
+        margin-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        h1{
+            font-size: 35px;
+            font-weight: 700;
+            color: $quaternaryColor;
+            text-shadow: $primaryTextShadow;
+        }
+    }
+    .topleaderboards_container{
+        height: 400px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        .second, .third, .first{
+            width: 165px;
+            border-top: 20px solid $quaternaryColor;
+            background-color: $primaryColor;
+            border-radius: 5px;
+            box-shadow: $lightBoxshadow;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .second{
+            height: 300px;
+        }
+        .first{
+            height: 400px;
+        }
+        .third{
+            height: 250px;
+        }
+    }
+    .rank_position{
+        padding-top: 20px;
+        p{
+            color: $secondaryColor;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .leaderboards_icon{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-size: contain;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .leaderboards_image1{
+        background-image: url(./images/Icon/icon1.png);
+    }
+    .leaderboards_image2{
+        background-image: url(./images/Icon/icon2.png);
+    }
+    .leaderboards_image3{
+        background-image: url(./images/Icon/icon3.png);
+    }
+    .leaderboards_icon4{ // TABLE DATA CLASS
+        vertical-align: middle;
+    }
+    .leaderboards_image4{
+        background-image: url(./images/Icon/icon4.png);
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-size: contain;
+        margin: auto;
+    }
+    .leaderboards_topcontainer{
+        padding: 10px 0px;
+        p{
+            padding: 5px;
+            text-transform: capitalize;
+            color: $secondaryColor;
+            font-weight: 700;
+        }
+        .game_name{
+            text-transform: capitalize;
+        }
+        .game_points{
+            font-size: 23px;
+        }
+    }
+    .leaderboards_container{
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    .game-page{
+        margin-top: 16px;
+        .topleaderboards_container{
+            width: 40%;
+        }
+        .leaderboards_container{
+            width: 80%;
+        }
+        .game_header{
+            width: 800px;
+            .game_headeruser{
+                h1{
+                font-size: 28px;
+                }
+            }
+            .game_headerdetails{
+                h1{
+                    font-size: 45px;
+                }
+            }
+        }
+        .UnityContainer .UnityStyles {
+            width: 960px;
+            height: 540px;
+        }
+    }    
+}
+

@@ -1,0 +1,35 @@
+@import "./custombootstrap"; //CUSTOM BOOTSTRAP THEME
+@import "./resetsheet"; // RESET STYLESHEET 
+@import "./webfont"; // FONT 
+@import "./header"; // HEADER NAVIGATION
+@import "./variable"; // VARIABLES 
+
+/* PAGES */ 
+@import "./entryform"; // LOGIN AND REG FORM 
+@import "./landingpage"; // LANDING PAGE 
+@import "./loadingpage"; // LOADING PAGE
+@import "./dashboardpage"; // DASHBOARD PAGE 
+@import "./gameheading"; // TRIVIA GAME HEADER DETAILS
+@import "./questionbank"; // QUESTION BANK
+@import "./resultspage"; // RESULTS PAGE
+@import "./gameerrorpage"; // ERROR PAGE FOR UNAVAILABLE / GAME EXPIRED
+@import "./classlist"; //CLASS LIST 
+@import "./page404"; // 404 PAGE
+
+@import "./unitygame"; // UNITY WEBGL GAME PAGE(TRIVIA GAME)
+@import "./dynamicform"; // DYNAMIC FORM (TRIVIA GAME)
+@import "./playermodal"; // PLAYER MODAL 
+
+@import "./datavisualization"; //DATA VISUALIZATION
+@import "./utils"; //UTILITY CLASS
+
+
+
+
+body{
+    background: $mainBackground;
+    font-family: $primaryFont;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}

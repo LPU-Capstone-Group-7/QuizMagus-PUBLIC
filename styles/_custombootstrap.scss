@@ -1,0 +1,39 @@
+@import "../styles/variable";
+
+$theme-colors: (
+    "quizard-violet" : $quizardViolet
+    // "main-color" : $mainBackground,
+    // "secondary-color": $secondaryColor
+);
+
+.dropdown-toggle.noCaret:after {
+    display: none;
+}
+
+a.dropdown-item:hover, a.dropdown-item:active, a.dropdown-item:focus{
+    background-color: rgba($secondaryColor, 0.1);
+    border-color: rgba($secondaryColor, 0.1);
+    color:$secondaryColor
+}
+
+.carousel-control-next-icon.custom-next{
+    background-image: url('./images/Icon/next-icon.svg');
+}
+
+.carousel-control-next-icon.custom-prev{
+    background-image: url('./images/Icon/prev-icon.svg');
+}
+
+.carousel-indicators{
+    transform: scale(1.7);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba($secondaryColor, 0.5) !important;
+}
+
+.carousel-indicators .active{
+    background-color: rgba($secondaryColor, 1) !important;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

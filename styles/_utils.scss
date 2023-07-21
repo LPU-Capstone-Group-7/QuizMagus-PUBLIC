@@ -1,0 +1,114 @@
+.h4-text{
+    font-size: 12px;
+}
+
+.h3-text{
+    font-size: 16px;
+}
+
+.h2-text{
+    font-size: 32px;
+}
+
+.h1-text{
+    font-size: 48px;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.font-semibold{
+    font-weight: 600;
+}
+
+.font-bold{
+    font-weight:700;
+}
+
+.color_secondary{
+    color: $secondaryColor;
+}
+
+.color_quaternary{
+    color: $quaternaryColor;
+
+}
+
+.flex-inline{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-nowrap{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.mx-auto{
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.w-full{
+    width:100%
+}
+
+.w-fit-content{
+    width:fit-content;
+}
+
+.px-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.background-transparent{
+    background-color: transparent;
+}
+
+.table-zebra{
+    letter-spacing: 1px;
+    margin: auto;
+    thead{
+        tr{
+            th{
+                width: 385px;
+                padding: 20px 10px;
+                color: $secondaryColor;
+                font-weight: 700;
+                font-size: 16px;
+                background-color: $quaternaryColor;
+                box-sizing: border-box;
+                border-bottom: 6px solid $quaternaryColorBorder;
+            }
+        }
+    }
+    tbody{
+        tr{
+            box-shadow: $lightBoxshadow;
+            th{
+                padding: 20px 20px 20px 10px;
+                text-transform: capitalize;
+                font-size: 13px;
+                font-weight: 600;
+                color: $secondaryColor;
+            }
+            &:nth-child(even){
+                background-color: #E8DCFE;
+            }
+            &:nth-child(odd){
+                background-color: $primaryColor;
+            }
+        }
+    }
+}

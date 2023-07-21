@@ -1,0 +1,201 @@
+// DYNAMIC FORMS
+
+@import "./variable"; /* VARIABLES */
+
+// DYNAMIC FORM - TRIVIA GAME
+.forms_div{
+    padding-bottom: 3em;
+    .container_form{
+        max-width: 400px;
+        margin: auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        min-height: 520px;
+        border-radius: 20px;
+        background-color: $primaryColor;
+        box-shadow: $mainBoxshadow;
+        padding: 0px 12px 12px;
+        padding-bottom: 30px;
+        .dynamic-form{
+            font-family: $primaryFont;
+            padding: 20px 20px 10px;
+            .dynamic_form_head{
+                padding-top: 14px;
+                position: sticky;
+                top: 0;
+                backdrop-filter: blur(8px);
+                height: 105px;
+                z-index: 98;
+                h1{
+                    font-size: 35px;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                }
+                h2{
+                    padding-bottom: 30px;
+                }
+            }
+            .hints_form, .randomize_form, .reversedword_form, .diagonalword_form, .correct_form{ // RADIO BUTTONS
+                p{
+                    padding: 20px 0px 10px;
+                    font-size: 15px;
+                }
+                label{
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+                input{
+                    margin: 0px 10px;
+                }
+            }
+            .add-question, .topic_form, .time_form, .allowed_attempts, .start_end_date{
+                label {
+                    display: block;
+                    padding-top: 20px;
+                    padding-bottom: 0px;
+                    font-size: 15px;
+                }
+                input, textarea{
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    outline: none;
+                    resize: none;
+                    border: none;
+                    border-bottom: 1px solid $secondaryColor;
+                }
+            }
+            .topic_form{
+                margin-bottom: 1em;
+                h6{
+                    font-size: 13px;
+                    color: $quinaryColor;
+                    margin-top: 6px;
+                }
+                .title_error{
+                    border-bottom: 1px solid $quinaryColor;
+                }
+                }
+            .gradingSystemInput{
+                label{
+                    display: block;
+                    padding-top: 20px;
+                    padding-bottom: 0px;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+            .start_end_date{
+                margin-bottom: 80px;
+            }
+            .submit_form{
+                text-align: center;
+                .submitButton{
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    outline: none;
+                    resize: none;
+                    border: none;  
+                    font-family: $primaryFont;
+                    margin-top: 90px;
+                    width: 90%;
+                    max-width: 200px;
+                    background: $secondaryColor;
+                    color: $primaryColor;
+                    font-size: 14px;
+                    cursor: pointer;
+                    border-radius: 30px;
+                }
+                .submitButton:hover{
+                    cursor: pointer;
+                    background-color: $primaryColor;
+                    transition: all .3s ease-in-out;
+                    color: $secondaryColor;
+                    border: 1px solid $secondaryColor;
+                }
+            }   
+        }
+    }
+}
+
+.addQuestionsInput, .classListInput{ // QUESTION & ANSWER // CLASSLIST INPUT
+    .accordion{
+        .accordion-header{
+            overflow: hidden;
+        }
+        .accordion-body{
+            transition: none;
+            animation: none;
+            h6{
+                font-size: 13px;
+                color: $quinaryColor;
+                margin-top: 6px;
+            }
+            .question_error{
+                border-bottom: 1px solid $quinaryColor;
+            }
+        }
+        .container{
+            margin-top: 10px;
+            .accordion-item{
+                box-shadow: $lightBoxshadow;
+                .easy-header{
+                    border-left: 7px solid $quaternaryColor;
+                }
+                .normal-header{
+                    border-left: 7px solid $OctalColor;
+                }
+                .hard-header{
+                    border-left: 7px solid $quinaryColor;
+                }
+            }
+        }   
+    }
+    .container_button{ 
+        height: 40px;
+        border-radius: 8px;
+        margin-top: 7px;
+        .btn.btn-primary{ // BUTTONS +/-
+            padding-top: 6px;
+            color: $tertiaryColor;
+            background-color: $quaternaryColor;
+            border: 1px solid $primaryColor;
+            &:hover{
+                color: $quaternaryColor;
+                background-color: $secondaryColor;
+                border: 1px solid $primaryColor;
+                transition: all .1s ease-in-out;
+            }
+        }
+    }
+}
+
+.questionbank-button{ // QUESTION BANK BUTTON
+    position: fixed;
+    border-radius: 30px;
+    top: 92%;
+    right: 1%;
+    .question-bank{
+        color: $tertiaryColor;
+        background-color: $quaternaryColor;
+        &:hover{
+            color: $quaternaryColor;
+            background-color: $secondaryColor;
+            border: 1px solid $primaryColor;
+            transition: all .1s ease-in-out;
+        }
+    }
+}
+
+// DESKTOP
+@media screen and (min-width: 767px) {
+    .forms_div{
+    .container_form{
+        max-width: 60%;
+    }
+    }
+}
+

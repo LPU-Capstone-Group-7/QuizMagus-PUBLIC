@@ -1,0 +1,60 @@
+@import "./variable"; /* VARIABLES */
+
+/* LANDING PAGE */
+// MOBILE 
+main{
+    min-height: 600px;
+    width: 100%;
+    .left_main{
+        color: $primaryColor;
+        padding: 20px;
+        text-align: center;
+        h1{
+            font-family: $primaryFont;
+            font-size: 60px;
+            font-weight: 800;
+            color: $quaternaryColor;
+            padding-top: 20px;
+        }
+        h2{
+            font-family: $primaryFont;
+            font-size: 28px;
+        }
+    }
+    .right_main{
+        padding-top: 80px;
+        .model_icon{
+            margin: auto;
+            height: 300px;
+            width: 335px;
+            background-image: url(./images/landingPage/Quizmagus_logo.png);
+            background-size: cover;
+            object-fit: cover;
+        }
+    }
+}
+
+// DESKTOP
+@media screen and (min-width: 1058px) { 
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        .left_main{
+            h1{
+                font-size: 75px;
+                padding: 187px 0px 0px 100px;
+            }
+            h2{
+                padding: 0px 10px 0px 100px;
+            }
+        }
+        .right_main{
+            margin: auto;
+            padding: 60px 0px 0px 100px;
+            .model_icon{
+                margin-top: -160px;
+            }
+        }
+    }
+  }
+
