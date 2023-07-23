@@ -4,7 +4,7 @@ A Capstone Project Presented to the faculty of College of Technology Lyceum of t
 Of the requirements for the degree of Bachelor of Science in Information Technology
 
 ### Group Members
-- Marasigan, Aaron Geoffrey [@Rongeoffrey](https://github.com/Rongeoffrey)
+- Marasigan, Aaron Geoffrey F. [@Rongeoffrey](https://github.com/Rongeoffrey)
 - Marquez, Joshua S. [@ThisIsJM](https://github.com/ThisIsJM)
 - Sarto, John Michael V.  
 
